@@ -3,26 +3,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="br.com.mezzanotte.a21game.fragments.GameFragment">
+    tools:context="br.com.mezzanotte.a21game.fragments.GameFragment"
+    tools:layout_editor_absoluteY="73dp">
 
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="30dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="16dp"
         android:text="Sua Pontuação"
         android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/tvPontuacao"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvPontuacao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginEnd="336dp"
+        android:layout_marginTop="16dp"
         android:text="0"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,38 +33,31 @@
 
     <Button
         android:id="@+id/btProximaCarta"
-        android:layout_width="275dp"
+        android:layout_width="195dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="56dp"
         android:text="Próxima Carta"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btRecomecar"
-        android:layout_width="275dp"
+        android:layout_width="195dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
         android:text="Recomeçar o Jogo"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btProximaCarta" />
 
     <ImageView
         android:id="@+id/ivCarta"
-        android:layout_width="186dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginTop="15dp"
+        android:layout_width="173dp"
+        android:layout_height="187dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginTop="4dp"
         android:src="@drawable/as_de_espada"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btRecomecar" />
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
